@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginDefinition xmlns="http://flexagon.com/deploy/plugin">
+<Name>FlexagonPlugin</Name>
+  <PluginDisplayName>Hello world</PluginDisplayName>
+  <Description>A plugin to manage server and deployment.</Description>
+  <TechnologyGroup>Web Servers</TechnologyGroup>
+  <SubTechnologyGroup>Server</SubTechnologyGroup>
+  <Vendor>Flexagon</Vendor>
+  <Version>1.1.1</Version>
+  <Operations>
+    <Operation>
+      <Name>build</Name>
+      <Description>Build an artifact to deploy to an Server</Description>
+      <Target>code.comb.Build</Target>
+      <PropertyKeys/>
+      <Inputs>
+      <AllowsUserDefined>false</AllowsUserDefined>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>false</ConsumesArtifacts>
+      <ProducesArtifacts>true</ProducesArtifacts>
+      </Operation>
+      </Operations>
+</PluginDefinition>
